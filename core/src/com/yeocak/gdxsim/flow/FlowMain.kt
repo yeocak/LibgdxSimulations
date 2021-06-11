@@ -12,7 +12,7 @@ import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.utils.ScreenUtils
 import com.badlogic.gdx.utils.viewport.StretchViewport
 import com.badlogic.gdx.utils.viewport.Viewport
-import com.yeocak.gdxsim.generalutils.OpenSimplexNoise
+import com.yeocak.gdxsim.generalutils.noise.OpenSimplexNoiseKotlin
 import kotlin.math.*
 import kotlin.random.Random
 
@@ -37,7 +37,7 @@ class FlowMain: ApplicationAdapter() {
 
     private var perlinZSeed: Double = 0.1
     private var updateCounterZSeed = 0
-    private lateinit var noise: OpenSimplexNoise
+    private lateinit var noiseX: OpenSimplexNoiseKotlin
 
     override fun create() {
         Gdx.app.logLevel = Application.LOG_DEBUG
@@ -54,7 +54,7 @@ class FlowMain: ApplicationAdapter() {
         viewport = StretchViewport(WIDTH, HEIGHT, camera)
 
         val noiseSeed: Long = Random.nextLong()
-        noise = OpenSimplexNoise(noiseSeed)
+        noiseX = OpenSimplexNoiseKotlin(noiseSeed)
 
         settingPoints()
     }
@@ -78,7 +78,7 @@ class FlowMain: ApplicationAdapter() {
     private fun settingVectors(){
         for(a in 0 until row){
             for(e in 0 until column){
-                val newPerlin = noise.eval(a * 0.08, e * 0.08, perlinZSeed)
+                val newPerlin = noiseX.random3D(a * 0.08, e * 0.08, perlinZSeed)
                 val vectorAngle = newPerlin * PI
 
                 val vectorX = cos(vectorAngle) * 4f
