@@ -81,8 +81,8 @@ class FlowMain: ApplicationAdapter() {
                 val newPerlin = noiseX.random3D(a * 0.08, e * 0.08, perlinZSeed)
                 val vectorAngle = newPerlin * PI
 
-                val vectorX = cos(vectorAngle) * 4f
-                val vectorY = sin(vectorAngle) * 4f
+                val vectorX = cos(vectorAngle) * 2f
+                val vectorY = sin(vectorAngle) * 2f
                 val newVector = Vector2(vectorX.toFloat(), vectorY.toFloat())
                 vectorList[a][e].set(newVector)
             }

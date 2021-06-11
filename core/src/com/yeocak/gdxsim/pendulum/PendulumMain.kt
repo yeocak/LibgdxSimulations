@@ -12,7 +12,6 @@ import com.yeocak.gdxsim.generalutils.*
 import com.yeocak.gdxsim.generalutils.hitbox.CircleHitbox
 import kotlin.math.PI
 import kotlin.math.sin
-
 class PendulumMain : ApplicationAdapter() {
     private lateinit var batch: SpriteBatch
     private lateinit var renderer: ShapeRenderer
