@@ -13,7 +13,8 @@ import javax.swing.*
 class GdxLauncher : JFrame() {
     private var gdxList = JList(arrayOf(
         "com.yeocak.gdxsim.pendulum.PendulumMain",
-        "com.yeocak.gdxsim.flow.FlowMain"))
+        "com.yeocak.gdxsim.flow.FlowMain",
+        "com.yeocak.gdxsim.noisecircle.NoiseCircle"))
 
     private val cellWidth = 300
     private val windowWidth = 1000 + cellWidth

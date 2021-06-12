@@ -18,7 +18,7 @@ class PendulumMain : ApplicationAdapter() {
     private lateinit var camera: OrthographicCamera
     private lateinit var viewport: Viewport
 
-    private val friction = 0.003f
+    private val friction = 0.002f
 
     private val WIDTH = 1000f
     private val HEIGHT = 1000f
