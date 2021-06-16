@@ -16,7 +16,8 @@ class GdxLauncher : JFrame() {
         "com.yeocak.gdxsim.flow.FlowMain",
         "com.yeocak.gdxsim.noisecircle.NoiseCircle",
         "com.yeocak.gdxsim.fractaltree.FractalTreeMain",
-        "com.yeocak.gdxsim.bruteforcewalker.BruteForceWalkerMain"))
+        "com.yeocak.gdxsim.bruteforcewalker.BruteForceWalkerMain",
+    "com.yeocak.gdxsim.watersurface.WaterSurfaceMain"))
 
     private val cellWidth = 300
     private val windowWidth = 1000 + cellWidth
