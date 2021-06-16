@@ -14,3 +14,6 @@
 
 [5. Brute-Force Walker Simulation](https://github.com/yeocak/LibgdxSimulations/tree/master/core/src/com/yeocak/gdxsim/bruteforcewalker)
 ![](https://raw.githubusercontent.com/yeocak/LibgdxSimulations/master/ForGithub/bruteforcewalker.png)
+
+[6. Water Surface Simulation](https://github.com/yeocak/LibgdxSimulations/tree/master/core/src/com/yeocak/gdxsim/watersurface)
+![](https://raw.githubusercontent.com/yeocak/LibgdxSimulations/master/ForGithub/watersurface.png)
