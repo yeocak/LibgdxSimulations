@@ -4,4 +4,4 @@
 
 
 You can change the frictional force if you want.
-![](https://raw.githubusercontent.com/yeocak/LibgdxSimulations/master/ForGithub/PendulumAnimation.gif)
+![](https://raw.githubusercontent.com/yeocak/LibgdxSimulations/master/ForGithub/pendulum.gif)
